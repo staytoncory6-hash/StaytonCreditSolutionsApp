@@ -1,456 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
   <title>Stayton Credit Solutions — Best Repair In The Business</title>
-
-  <!-- Primary SEO -->
-  <meta name="description" content="Stayton Credit Solutions in North Richland Hills, TX — professional credit repair, audits, dispute management, and score coaching. Call (682) 888-9241." />
-  <meta name="keywords" content="credit repair North Richland Hills, credit repair near me, fix credit, credit dispute, remove collections, increase credit score, Stayton Credit Solutions, Stayton Credit Repair, Joseph Stayton" />
-  <link rel="canonical" href="https://staytoncory6-hash.github.io/StaytonCreditSolutionsApp/
-
-  <!-- Open Graph / Social -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Stayton Credit Solutions — Best Repair In The Business" />
-  <meta property="og:description" content="Transparent pricing. Legal disputes. Real coaching. Call (682) 888-9241." />
-  <meta property="og:url" content="https://your-domain-or-github-pages-url.example/" />
-  <meta property="og:image" content="https://your-domain-or-github-pages-url.example/og-image.png" />
-
-  <!-- Favicon (replace with your own) -->
-  <link rel="icon" href="favicon.ico" />
-
-  <!-- LocalBusiness Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Stayton Credit Solutions",
-    "image": "https://your-domain-or-github-pages-url.example/logo.png",
-    "telephone": "+16828889241",
-    "email": "staytoncory6@gmail.com",
-    "slogan": "Best Repair In The Business",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "8500 Harwood Rd",
-      "addressLocality": "North Richland Hills",
-      "addressRegion": "TX",
-      "postalCode": "76180",
-      "addressCountry": "US"
-    },
-    "url": "https://your-domain-or-github-pages-url.example/",
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/",
-      "https://www.instagram.com/",
-      "https://www.linkedin.com/"
-    ],
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 32.8343,
-        "longitude": -97.2289
-      },
-      "geoRadius": 80000
-    },
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }]
-  }
-  </script>
-
-  <!-- Styles: Navy / Gold / White theme, sticky nav, modern layout -->
-  <style>
-    :root{
-      --navy:#0b1e3a;
-      --gold:#f4c542;
-      --white:#ffffff;
-      --slate:#e9eef5;
-      --ink:#0e1525;
-      --muted:#52607a;
-      --ring: rgba(13, 110, 253, .35);
-      --radius: 16px;
-      --shadow: 0 10px 30px rgba(0,0,0,.12);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-      color:var(--ink);
-      background:linear-gradient(180deg,#f7f9fc 0%, #ffffff 100%);
-    }
-    a{color:var(--navy);text-decoration:none}
-    a:focus, button:focus, input:focus, textarea:focus, select:focus{outline:3px solid var(--ring); outline-offset:2px}
-    /* Header / Nav */
-    header{
-      position:sticky; top:0; z-index:1000;
-      background:rgba(11,30,58,.9); backdrop-filter:saturate(1.2) blur(6px);
-      border-bottom:1px solid rgba(255,255,255,.12);
-    }
-    .nav{
-      max-width:1100px; margin:0 auto; padding:12px 20px;
-      display:flex; align-items:center; gap:16px; justify-content:space-between;
-      color:var(--white);
-    }
-    .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.2px}
-    .brand img{height:36px; width:36px; border-radius:50%; object-fit:cover; background:#fff}
-    .brand small{display:block; font-weight:600; opacity:.85}
-    nav ul{display:flex; gap:18px; list-style:none; margin:0; padding:0}
-    nav a{color:var(--white); opacity:.9}
-    nav a:hover, nav a[aria-current="page"]{opacity:1; border-bottom:2px solid var(--gold)}
-    .cta{
-      display:inline-flex; align-items:center; gap:10px;
-      background:var(--gold); color:#2a2000; font-weight:800; padding:10px 16px; border-radius:999px;
-      box-shadow: var(--shadow);
-    }
-    .cta:hover{transform:translateY(-1px)}
-    /* Hero */
-    .hero{
-      max-width:1100px; margin:0 auto; padding:64px 20px;
-      display:grid; grid-template-columns: 1.2fr 1fr; gap:28px; align-items:center;
-    }
-    .badge{display:inline-block; padding:6px 10px; border-radius:999px; background:#0b1e3a12; color:var(--navy); font-weight:700}
-    h1{font-size: clamp(28px, 4vw, 54px); line-height:1.05; margin:14px 0 10px}
-    .lead{font-size:clamp(16px, 2.2vw, 20px); color:var(--muted); max-width:60ch}
-    .actions{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 18px; border-radius:12px; font-weight:700; border:1px solid #0000; cursor:pointer;
-      box-shadow: var(--shadow);
-    }
-    .btn.primary{background:var(--navy); color:var(--white)}
-    .btn.secondary{background:#fff; color:var(--navy); border-color:#d6dfef}
-    /* Sections */
-    section{padding:56px 20px}
-    .wrap{max-width:1100px; margin:0 auto}
-    .cards{display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:16px}
-    .card{background:#fff; border:1px solid #eef2f9; border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
-    .card h3{margin:4px 0 8px}
-    .tag{display:inline-block; background:#eef2f9; color:#24324a; padding:4px 8px; border-radius:10px; font-size:12px; font-weight:700}
-    /* Pricing */
-    .pricing{display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:18px}
-    .price{background:linear-gradient(180deg,#0b1e3a, #102a55); color:#fff}
-    .price .head{display:flex; align-items:baseline; gap:8px}
-    .price .big{font-size:40px; font-weight:900}
-    .price .small{opacity:.85}
-    .price ul{padding-left:18px; line-height:1.7}
-    /* Testimonials */
-    .testi{display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:18px}
-    blockquote{margin:0; font-size:16px; color:#1b2740}
-    blockquote footer{margin-top:10px; font-weight:800}
-    /* Contact */
-    form{display:grid; gap:10px}
-    input, textarea, select{
-      font:inherit; padding:12px 12px; border:1px solid #cdd7ea; border-radius:10px; background:#fff;
-    }
-    input:hover, textarea:hover{border-color:#9db2d9}
-    button[type="submit"]{background:var(--gold); color:#2a2000; border:none; padding:14px 16px; border-radius:12px; font-weight:900; cursor:pointer; box-shadow:var(--shadow)}
-    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .grid-2{grid-template-columns:1fr}
-    }
-    /* Footer */
-    footer{
-      background:var(--navy); color:#dbe4ff; padding:28px 20px; margin-top:32px
-    }
-    footer a{color:#fff}
-    .sub{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; max-width:1100px; margin:0 auto}
-    .legal{font-size:12px; opacity:.85}
-    /* Utility */
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Stayton Credit Solutions provides transparent, legal credit repair, score coaching, and identity theft support for Texans who are ready to repair, rebuild, and rise."
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Header / Navigation -->
-  <header role="banner">
-    <div class="nav" aria-label="Top Bar">
-      <a class="brand" href="#top" aria-label="Stayton Credit Solutions home">
-        <img src="logo.png" alt="Stayton Credit Solutions logo" />
-        <div>
-          <div>Stayton Credit <span style="color:var(--gold)">Solutions</span></div>
-          <small>Best Repair In The Business</small>
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand-logo">SCS</span>
+        <div class="brand-text">
+          <span class="brand-name">Stayton Credit Solutions</span>
+          <span class="brand-tagline">Best Repair In The Business</span>
         </div>
-      </a>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#why-us">Why Us</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact" class="cta">Call (682) 888‑9241</a></li>
-        </ul>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:(469)4356294" class="nav-call">Call (469)4356294</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main id="top">
-    <section class="hero" aria-labelledby="h-title">
-      <div>
-        <span class="badge" aria-label="Award">Voted New Business of the Year*</span>
-        <h1 id="h-title">Repair. Rebuild. Rise — with Transparent, Legal Credit Help.</h1>
-        <p class="lead">
-          Real disputes under FCRA/CROA. Score‑building strategy. Coaching that sticks.
-          Based in North Richland Hills and serving Texas statewide.
+  <!-- ================= HERO ================= -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">Local • Transparent • CROA-Compliant</p>
+          <h1>Repair. Rebuild. Rise — with real credit strategy.</h1>
+
+          <p class="hero-subtitle">
+            Stayton Credit Solutions helps you clean up inaccurate items, understand your
+            score, and build a plan that actually sticks.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Book Free Consultation</a>
+            <a href="#pricing" class="btn ghost">See Pricing</a>
+          </div>
+
+          <p class="hero-phone">
+            Or call/text <a href="tel:(469)4356294">(469)4356294</a> during business hours.
+          </p>
+
+          <p class="hero-note">
+            <strong>Time saver:</strong> Before your appointment, please pull your
+            <strong>three full credit reports</strong> (Experian, Equifax, TransUnion) from
+            a reputable source such as AnnualCreditReport.com and have them ready. This lets
+            us get to work faster.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <h2>What we do for you</h2>
+          <ul class="hero-list">
+            <li>3-bureau credit audit &amp; written game plan</li>
+            <li>Targeted FCRA/CROA-compliant disputes</li>
+            <li>Score-building strategy &amp; coaching</li>
+            <li>Identity theft support &amp; documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ASK AI #1 — SCORE AI COACH (ABOVE FAST FACTS) ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="ai-section ai-section--score">
+          <div class="ai-header">
+            <h2>Score AI Coach</h2>
+            <p class="muted">
+              A free mini coach to help you understand how your <strong>credit score</strong>
+              works — what helps it, what hurts it, and what may change over time.
+            </p>
+          </div>
+
+          <div class="ai-layout">
+            <!-- Front-end only chat UI (no backend yet) -->
+            <div class="ai-chat-box">
+              <div class="ai-chat-messages" id="score-ai-messages">
+                <div class="msg bot">
+                  <p>
+                    👋 I’m <strong>Score AI Coach</strong>. Ask things like:
+                    “Why did my score drop 40 points?” or
+                    “What’s one healthy way to add points?”
+                  </p>
+                </div>
+              </div>
+              <div class="ai-chat-input">
+                <input
+                  id="score-ai-input"
+                  type="text"
+                  placeholder="Ask about your score. Educational only, not legal advice."
+                />
+                <button type="button" id="score-ai-send">Send</button>
+              </div>
+            </div>
+
+            <div class="ai-disclaimer">
+              <p class="muted small-text">
+                Score AI Coach is for <strong>education only</strong> and does not replace
+                personalized legal, tax, or financial advice. For specific guidance,
+                talk directly with Stayton Credit Solutions or another qualified professional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAST FACTS ================= -->
+    <section class="section">
+      <div class="container">
+        <h3>Fast Facts</h3>
+        <div class="info-card">
+          <ul>
+            <li><strong>Owner:</strong> Joseph Stayton</li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:staytoncory6@gmail.com">staytoncory6@gmail.com</a>
+            </li>
+            <li>
+              <strong>Phone:</strong>
+              <a href="tel:(469)4356294">(469)4356294</a>
+            </li>
+            <li><strong>Location:</strong> North Richland Hills, TX 76180</li>
+            <li><strong>Hours:</strong> Mon–Fri • 9:00am–6:00pm CST</li>
+          </ul>
+          <p class="muted small-text">
+            <strong>Reminder:</strong> Please have your three credit reports ready before
+            your consult so we can go straight into strategy instead of waiting on pulls.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services that actually move the needle</h2>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>3-Bureau Credit Audit</h3>
+            <p>
+              We review Experian, Equifax, and TransUnion line by line, identify
+              inaccurate/obsolete items, and map out a written game plan.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Dispute &amp; Reinvestigation Support</h3>
+            <p>
+              Targeted, compliant disputes to bureaus and furnishers for items that are
+              inaccurate, incomplete, or unverifiable.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Score Coaching</h3>
+            <p>
+              Utilization, mix, new accounts, and payment history strategy so you know
+              what actions to take after the disputes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Identity Theft Package</h3>
+            <p>
+              Help with affidavits, police reports, freezes, alerts, and follow-up letters
+              if you’ve been a victim of fraud.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICING ================= -->
+    <section id="pricing" class="section section-alt">
+      <div class="container">
+        <h2>Simple, transparent pricing</h2>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="price-amount">$150</div>
+            <h3>Audit &amp; Setup (one-time)</h3>
+            <ul>
+              <li>3-bureau credit audit</li>
+              <li>Written action plan</li>
+              <li>Onboarding + education call</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <div class="price-amount">$99</div>
+            <h3>Monthly Service</h3>
+            <ul>
+              <li>Ongoing disputes &amp; reinvestigations</li>
+              <li>Score coaching check-ins</li>
+              <li>Email/text support Mon–Fri</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <div class="price-amount">$25</div>
+            <h3>Per Valid Deletion</h3>
+            <ul>
+              <li>Pay only on documented, verifiable deletions</li>
+              <li>Proof of removal provided for your records</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="muted small-text compliance">
+          We follow the Credit Repair Organizations Act (CROA). No specific score or outcome
+          is guaranteed. All services depend on the actions of the credit bureaus and
+          furnishers.
         </p>
-        <div class="actions">
-          <a class="btn primary" href="#contact" aria-label="Book a free consultation">Book Free Consultation</a>
-          <a class="btn secondary" href="#pricing" aria-label="See pricing plans">See Pricing</a>
-          <a class="btn secondary" href="tel:+16828889241" aria-label="Call now">(682) 888‑9241</a>
+      </div>
+    </section>
+
+    <!-- ================= WHY US ================= -->
+    <section id="why-us" class="section">
+      <div class="container">
+        <h2>Why clients choose Stayton Credit Solutions</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Legal &amp; Ethical</h3>
+            <p>We operate within FCRA/CROA and keep you informed of every step taken.</p>
+          </article>
+
+          <article class="card">
+            <h3>Plain-English Updates</h3>
+            <p>No jargon. You’ll know what we did, when we did it, and what comes next.</p>
+          </article>
+
+          <article class="card">
+            <h3>Score-First Strategy</h3>
+            <p>We focus on the moves that can create the biggest long-term impact.</p>
+          </article>
+
+          <article class="card">
+            <h3>Local &amp; Reachable</h3>
+            <p>Based in North Richland Hills, serving Texans statewide by phone, text, and email.</p>
+          </article>
         </div>
-        <p style="font-size:12px;color:#6c7a95;margin-top:10px">*Community recognition mention. Replace with your real award if applicable.</p>
-      </div>
-      <div class="card" aria-label="Fast facts">
-        <h3>Fast facts</h3>
-        <ul>
-          <li>Owner: <strong>Joseph Stayton</strong></li>
-          <li>Email: <a href="mailto:staytoncory6@gmail.com">staytoncory6@gmail.com</a></li>
-          <li>Address: 8500 Harwood Rd, North Richland Hills, TX 76180</li>
-          <li>Hours: Mon–Fri 9a–6p</li>
-        </ul>
-        <div class="tag">Navy / Gold / White</div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="wrap" aria-labelledby="s-title">
-      <h2 id="s-title">Services that actually move the needle</h2>
-      <div class="cards" role="list">
-        <article class="card" role="listitem">
-          <h3>Credit Audit & Strategy</h3>
-          <p>Line‑by‑line review of all three bureaus with a written plan: errors to dispute, utilization fixes, and score‑lift roadmap.</p>
-        </article>
-        <article class="card" role="listitem">
-          <h3>FCRA/CROA Dispute Handling</h3>
-          <p>Targeted, compliant disputes to bureaus and furnishers to remove inaccurate, incomplete, or unverifiable items.</p>
-        </article>
-        <article class="card" role="listitem">
-          <h3>Identity Theft Package</h3>
-          <p>Full kit: FTC affidavit, police report guidance, freezes, fraud alerts, and follow‑up letters.</p>
-        </article>
-        <article class="card" role="listitem">
-          <h3>Score Coaching</h3>
-          <p>Utilization, mix, age, and payment history playbook—plus secured card and tradeline education.</p>
-        </article>
-      </div>
-    </section>
+    <!-- ================= FAQ ================= -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <h2>Frequently asked questions</h2>
 
-    <!-- Pricing -->
-    <section id="pricing" class="wrap" aria-labelledby="p-title">
-      <h2 id="p-title">Simple, transparent pricing</h2>
-      <div class="pricing">
-        <article class="card price" aria-label="Audit & Setup">
-          <div class="head">
-            <div class="big">$150</div><div class="small">Audit & Setup (one‑time)</div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>How long does this process take?</h3>
+            <p>
+              Many clients see movement in 30–90 days, but timing depends on the bureaus,
+              furnishers, and your unique situation.
+            </p>
           </div>
-          <ul>
-            <li>3‑bureau credit audit & written plan</li>
-            <li>Custom dispute calendar</li>
-            <li>Credit education starter kit</li>
-          </ul>
-        </article>
-        <article class="card price" aria-label="Monthly Service">
-          <div class="head">
-            <div class="big">$99</div><div class="small">Monthly (no contract)</div>
+
+          <div class="faq-item">
+            <h3>Do I need all three credit reports?</h3>
+            <p>
+              Yes. We need Experian, Equifax, and TransUnion to see the full picture.
+              <strong>Please pull all three reports before your consultation</strong> so we can
+              dive straight into strategy instead of waiting on logins.
+            </p>
           </div>
-          <ul>
-            <li>Up to 3 rounds of targeted disputes</li>
-            <li>Reinvestigation follow‑ups</li>
-            <li>Monthly coaching check‑ins</li>
-          </ul>
-        </article>
-        <article class="card price" aria-label="Per‑Deletion">
-          <div class="head">
-            <div class="big">$25</div><div class="small">Per valid deletion</div>
+
+          <div class="faq-item">
+            <h3>Can you guarantee deletions or score increases?</h3>
+            <p>
+              No one can legally guarantee results. We challenge inaccurate, incomplete, or
+              unverifiable items and coach you on healthy credit behavior.
+            </p>
           </div>
-          <ul>
-            <li>Pay only for successful, documented deletions</li>
-            <li>Proof of removal provided</li>
-          </ul>
-        </article>
-      </div>
-      <p style="color:#6c7a95; font-size:12px; margin-top:10px">
-        Compliance note: We follow the Credit Repair Organizations Act (CROA). No promises or guarantees of specific score changes.
-      </p>
-    </section>
 
-    <!-- Why Us -->
-    <section id="why-us" class="wrap" aria-labelledby="w-title">
-      <h2 id="w-title">Why clients choose us</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Legal & Ethical</h3>
-          <p>Disputes grounded in FCRA/CROA—you stay within the rules, always.</p>
-        </div>
-        <div class="card">
-          <h3>Plain‑English Updates</h3>
-          <p>Track what we sent, what came back, and what’s next in normal language.</p>
-        </div>
-        <div class="card">
-          <h3>Score‑First Strategy</h3>
-          <p>We prioritize high‑impact changes—utilization, errors, and payment plan.</p>
-        </div>
-        <div class="card">
-          <h3>Local & Available</h3>
-          <p>North Richland Hills based. Phone, text, or email support during business hours.</p>
+          <div class="faq-item">
+            <h3>Is this legal?</h3>
+            <p>
+              Yes. Credit repair is legal when done under the rules of the Fair Credit Reporting
+              Act (FCRA) and the Credit Repair Organizations Act (CROA). We do not create new
+              identities or CPNs.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="wrap" aria-labelledby="t-title">
-      <h2 id="t-title">Results that speak</h2>
-      <div class="testi">
-        <figure class="card">
-          <blockquote>“I saw inaccurate collections removed and finally got approved for my first auto loan. Clear communication the whole way.”</blockquote>
-          <footer>— R.M., Fort Worth</footer>
-        </figure>
-        <figure class="card">
-          <blockquote>“Loved the coaching. I understand my score now and what to do next.”</blockquote>
-          <footer>— T.J., Hurst</footer>
-        </figure>
-        <figure class="card">
-          <blockquote>“Professional, transparent, and local. Worth it.”</blockquote>
-          <footer>— S.P., NRH</footer>
-        </figure>
-      </div>
-    </section>
+    <!-- ============ ASK AI #2 — CREDIT Q&A ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="ai-section ai-section--credit">
+          <div class="ai-header">
+            <h2>Ask AI: Credit Questions</h2>
+            <p class="muted">
+              Have a question about collections, late payments, or utilization?
+              Use this box to get <strong>general educational guidance</strong> before
+              you schedule your one-on-one call.
+            </p>
+          </div>
 
-    <!-- FAQ -->
-    <section id="faq" class="wrap" aria-labelledby="f-title">
-      <h2 id="f-title">Frequently asked questions</h2>
-      <div class="cards">
-        <div class="card">
-          <details>
-            <summary>How long does credit repair take?</summary>
-            <p>Most see movement within 30–90 days, but timing varies by case and response from bureaus/furnishers.</p>
-          </details>
-        </div>
-        <div class="card">
-          <details>
-            <summary>Can you guarantee deletions?</summary>
-            <p>No one can legally guarantee results. We dispute inaccurate, incomplete, or unverifiable items under the FCRA and escalate with proof.</p>
-          </details>
-        </div>
-        <div class="card">
-          <details>
-            <summary>Do I need all three bureau reports?</summary>
-            <p>Yes—errors can appear on one but not another. We pull or help you obtain all three.</p>
-          </details>
-        </div>
-        <div class="card">
-          <details>
-            <summary>What’s the best way to raise my score?</summary>
-            <p>Manage utilization, build positive history, fix errors, and keep on‑time payments. We provide a customized plan.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="wrap" aria-labelledby="c-title" aria-describedby="c-desc">
-      <h2 id="c-title">Talk to a real human</h2>
-      <p id="c-desc">Fill this out and we’ll reach you during business hours. Or call <a href="tel:+16828889241">(682) 888‑9241</a>.</p>
-      <div class="cards">
-        <form id="contactForm" class="card" aria-label="Contact form">
-          <div class="grid-2">
-            <div>
-              <label for="name" class="sr-only">Full name</label>
-              <input id="name" name="name" placeholder="Full name" required />
+          <div class="ai-layout">
+            <div class="ai-chat-box">
+              <div class="ai-chat-messages" id="credit-ai-messages">
+                <div class="msg bot">
+                  <p>
+                    💬 Example: “Should I settle or pay in full?” •
+                    “What’s a goodwill letter?” • “How many cards is too many?”
+                  </p>
+                </div>
+              </div>
+              <div class="ai-chat-input">
+                <textarea
+                  id="credit-ai-input"
+                  placeholder="Type your credit question here. This tool is educational only and is not legal advice."
+                ></textarea>
+                <button type="button" id="credit-ai-send">Get Sample Guidance</button>
+              </div>
             </div>
-            <div>
-              <label for="email" class="sr-only">Email</label>
-              <input id="email" name="email" type="email" placeholder="Email" required />
+
+            <div class="ai-disclaimer">
+              <p class="muted small-text">
+                Ask AI: Credit Questions is for <strong>general information</strong>, not
+                individualized legal, tax, or financial advice and does not create a client
+                relationship. For a custom game plan, book a consultation with
+                Stayton Credit Solutions.
+              </p>
             </div>
           </div>
-          <div class="grid-2">
-            <div>
-              <label for="phone" class="sr-only">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="Phone (optional)" />
-            </div>
-            <div>
-              <label for="service" class="sr-only">Service</label>
-              <select id="service" name="service">
-                <option value="Audit">Credit Audit</option>
-                <option value="Disputes">Disputes</option>
-                <option value="ID Theft">Identity Theft</option>
-                <option value="Coaching">Score Coaching</option>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>Ready to talk to a real person?</h2>
+          <p>
+            Fill this out and we’ll reach out during business hours. You can also call or text
+            <a href="tel:(469)4356294">(469)4356294</a>.
+          </p>
+          <p class="muted small-text">
+            Time saver: please have your <strong>three credit reports</strong> ready
+            before we call so we can go straight into strategy.
+          </p>
+
+          <form
+            class="contact-form"
+            action="mailto:staytoncory6@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label>
+              Full name
+              <input type="text" name="name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="(469)4356294" />
+            </label>
+
+            <label>
+              Service
+              <select name="service">
+                <option>Credit Audit</option>
+                <option>Disputes</option>
+                <option>Identity Theft Help</option>
+                <option>Score Coaching</option>
               </select>
-            </div>
-          </div>
-          <div>
-            <label for="message" class="sr-only">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals..."></textarea>
-          </div>
-          <button type="submit" aria-label="Send message">Send Message</button>
-          <p id="formStatus" role="status" aria-live="polite" style="margin:6px 0 0; font-size:13px; color:#1b5e20"></p>
-          <p style="font-size:12px;color:#6c7a95">Submitting will open your email app with a pre‑filled message (no third‑party needed).</p>
-        </form>
+            </label>
 
-        <div class="card" aria-label="Contact details">
-          <h3>Contact</h3>
-          <p><strong>Stayton Credit Solutions</strong><br/>
-            8500 Harwood Rd<br/>North Richland Hills, TX 76180</p>
-          <p><a href="tel:+16828889241">Call: (682) 888‑9241</a><br/>
-            <a href="mailto:staytoncory6@gmail.com">Email: staytoncory6@gmail.com</a></p>
-          <p><a href="#top" class="btn secondary">Back to top</a></p>
+            <label>
+              Message
+              <textarea name="message" rows="4"></textarea>
+            </label>
+
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
         </div>
+
+        <aside class="contact-info">
+          <h3>Stayton Credit Solutions</h3>
+          <p>North Richland Hills, TX 76180</p>
+          <p>Phone: <a href="tel:(469)4356294">(469)4356294</a></p>
+          <p>Email: <a href="mailto:staytoncory6@gmail.com">staytoncory6@gmail.com</a></p>
+          <p>
+            View our client agreement:
+            <a href="contract.html" target="_blank">Client Contract</a>
+          </p>
+        </aside>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <div class="sub">
-      <div>
-        <strong>Stayton Credit Solutions</strong> • <a href="mailto:staytoncory6@gmail.com">staytoncory6@gmail.com</a> • <a href="tel:+16828889241">(682) 888‑9241</a>
-        <div class="legal">© <span id="year"></span> Stayton Credit Solutions. All rights reserved. No guarantee of specific outcomes. CROA compliant.</div>
-      </div>
-      <div>
-        <a href="sitemap.xml">Sitemap</a> • <a href="#" aria-label="Privacy policy placeholder">Privacy</a> • <a href="#" aria-label="Terms of service placeholder">Terms</a>
-      </div>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>
+        ©
+        <span>Stayton Credit Solutions</span> •
+        <a href="mailto:staytoncory6@gmail.com">staytoncory6@gmail.com</a> •
+        <a href="tel:(469)4356294">(469)4356294</a>
+      </p>
+      <p class="muted small-text">
+        We are not attorneys, CPAs, or financial advisors. Information provided is for
+        educational purposes only and is not legal, tax, or investment advice.
+      </p>
     </div>
   </footer>
 
-  <!-- Minimal JS: active nav, year, and mailto submit -->
+  <!-- ========== OPTIONAL: SIMPLE FRONT-END AI PLACEHOLDER JS ========== -->
   <script>
-    // Active link highlighting
-    const links=[...document.querySelectorAll('nav a[href^="#"]')];
-    const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    const io=new IntersectionObserver(entries=>{
-      entries.forEach(e=>{
-        const id = '#' + e.target.id;
-        const link = links.find(a=>a.getAttribute('href')===id);
-        if(link){ link.setAttribute('aria-current', e.isIntersecting? 'page' : null); }
+    // Simple fake responses just so the boxes "do something" without a backend.
+
+    function appendMessage(containerId, text, sender) {
+      const box = document.getElementById(containerId);
+      const div = document.createElement("div");
+      div.className = "msg " + (sender === "bot" ? "bot" : "user");
+      const p = document.createElement("p");
+      p.textContent = text;
+      div.appendChild(p);
+      box.appendChild(div);
+      box.scrollTop = box.scrollHeight;
+    }
+
+    // Score AI Coach
+    const scoreInput = document.getElementById("score-ai-input");
+    const scoreSend = document.getElementById("score-ai-send");
+
+    if (scoreSend && scoreInput) {
+      scoreSend.addEventListener("click", function () {
+        const text = scoreInput.value.trim();
+        if (!text) return;
+        appendMessage("score-ai-messages", text, "user");
+
+        appendMessage(
+          "score-ai-messages",
+          "This is a general, educational tip: focus on on-time payments and keeping utilization under about 30% of your limits. For a custom plan, schedule a call so we can review all three of your credit reports together.",
+          "bot"
+        );
+        scoreInput.value = "";
       });
-    },{ threshold:.5 });
-    sections.forEach(s=>io.observe(s));
+    }
 
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Credit AI
+    const creditInput = document.getElementById("credit-ai-input");
+    const creditSend = document.getElementById("credit-ai-send");
 
-    // Contact form -> opens user's email client with prefilled message
-    document.getElementById('contactForm').addEventListener('submit', function(ev){
-      ev.preventDefault();
-      const data = new FormData(this);
-      const body = [
-        'Name: ' + (data.get('name')||''),
-        'Email: ' + (data.get('email')||''),
-        'Phone: ' + (data.get('phone')||''),
-        'Service: ' + (data.get('service')||''),
-        '',
-        (data.get('message')||'')
-      ].join('%0D%0A');
-      const mailto = `mailto:staytoncory6@gmail.com?subject=New%20Lead%20from%20Website&body=${body}`;
-      window.location.href = mailto;
-      const status = document.getElementById('formStatus');
-      status.textContent = 'Opening your email app... If nothing happens, email us directly.';
-    });
+    if (creditSend && creditInput) {
+      creditSend.addEventListener("click", function () {
+        const text = creditInput.value.trim();
+        if (!text) return;
+        appendMessage("credit-ai-messages", text, "user");
+
+        appendMessage(
+          "credit-ai-messages",
+          "General info only: before paying or settling any account, it’s smart to look at how old it is, whether it’s accurate, and how it reports on all three bureaus. Never ignore valid debts, but also don’t rush into agreements you don’t understand. For case-specific advice, talk directly with us or another qualified professional.",
+          "bot"
+        );
+        creditInput.value = "";
+      });
+    }
   </script>
 </body>
 </html>
