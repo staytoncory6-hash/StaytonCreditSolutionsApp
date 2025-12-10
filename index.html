@@ -2,372 +2,202 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Stayton Credit Solutions — Best Repair In The Business</title>
+  <title>Stayton Credit Solutions App | AI Score Coach</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-        content="Stayton Credit Solutions helps you clean up inaccurate items, understand your score, and build a real, legal game plan to rebuild your credit." />
+    content="Stayton Credit Solutions App with AI Score Coach to help you rebuild, repair, and level up your credit.">
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
+
 <body>
-  <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <div class="container nav">
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="container header-inner">
       <div class="brand">
-        <div class="brand-logo">
-          <span class="brand-initials">SCS</span>
-        </div>
+        <!-- 🔹 UPDATE THIS PATH TO YOUR REAL LOGO FILE -->
+        <img
+          src="assets/logo.png"
+          alt="Stayton Credit Solutions Logo"
+          class="brand-logo"
+        />
+
         <div class="brand-text">
           <span class="brand-name">Stayton Credit Solutions</span>
-          <span class="brand-tagline">Best Repair In The Business</span>
+          <span class="brand-tagline">Smart Strategy · Real Laws · Real Results</span>
         </div>
       </div>
 
-      <nav class="main-nav">
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-phone" href="tel:14694356294">Call (469) 435-6294</a>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#features">Credit Tools</a>
+        <a href="#coach">AI Score Coach</a>
       </nav>
-    </div>
-
-    <div class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="hero-eyebrow">Local • Transparent • CROA-Compliant</p>
-          <h1>Repair. Rebuild. Rise — with real credit strategy.</h1>
-          <p class="hero-subtitle">
-            Stayton Credit Solutions helps you clean up inaccurate items, understand your score,
-            and build a plan that actually sticks.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn primary">Book Free Consultation</a>
-            <a href="#pricing" class="btn outline">See Pricing</a>
-          </div>
-          <p class="hero-note">
-            Or call/text <a href="tel:14694356294">(469) 435-6294</a> during business hours.
-          </p>
-          <p class="hero-note small">
-            Time saver: Before your appointment, please pull your three full credit reports
-            (Experian, Equifax, TransUnion) from a reputable source such as
-            AnnualCreditReport.com and have them ready. This lets us get to work faster.
-          </p>
-        </div>
-
-        <div class="hero-card">
-          <h2>Score AI Coach</h2>
-          <p class="muted">
-            A free mini coach to help you understand how your credit score works — what helps it,
-            what hurts it, and what may change over time.
-          </p>
-          <div class="chat-bubble">
-            I’m Score AI Coach. Ask things like:<br>
-            <strong>“Why did my score drop 40 points?”</strong><br>
-            <strong>“What’s one healthy way to add points?”</strong>
-          </div>
-          <textarea class="input" placeholder="Type your credit question here..."></textarea>
-          <button class="btn full">Send</button>
-          <p class="disclaimer small">
-            Score AI Coach is for education only and does not replace personalized legal, tax, or
-            financial advice. For specific guidance, talk directly with Stayton Credit Solutions
-            or another qualified professional.
-          </p>
-        </div>
-      </div>
     </div>
   </header>
 
-  <!-- ================ MAIN CONTENT ================ -->
+  <!-- ======================= HERO ======================= -->
   <main>
-    <!-- SERVICES -->
-    <section id="services" class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2>What we do for you</h2>
-          <p>
-            Services that actually move the needle on your credit — not magic tricks, not CPNs,
-            just real laws and real strategy.
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <!-- HERO LEFT -->
+        <div>
+          <h1 class="hero-title">
+            Turn credit confusion into
+            <span class="highlight">a clear game plan.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Stayton Credit Solutions App + AI Score Coach breaks your credit down in real words,
+            gives you steps you can actually follow, and helps you move from “stuck” to “approved”.
           </p>
-        </header>
+
+          <div class="hero-badges">
+            <span class="hero-badge">Custom Game Plan</span>
+            <span class="hero-badge">AI Score Coaching</span>
+            <span class="hero-badge">Focused on Fair Credit Laws</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#coach" class="btn btn-primary">Ask the AI Score Coach</a>
+            <a href="#features" class="btn btn-outline">See What We Fix</a>
+          </div>
+        </div>
+
+        <!-- HERO RIGHT – SNAPSHOT CARD -->
+        <aside class="hero-card">
+          <h2 class="hero-card-title">Your Credit Snapshot</h2>
+          <p class="hero-card-subtitle">
+            Not sure where to start? Use this simple snapshot so the AI Score Coach knows what to attack first.
+          </p>
+
+          <form class="hero-form">
+            <div class="form-group">
+              <label for="currentScore">Current Score Range</label>
+              <select id="currentScore">
+                <option value="">Select range</option>
+                <option>Under 500</option>
+                <option>500 - 579</option>
+                <option>580 - 639</option>
+                <option>640 - 699</option>
+                <option>700 - 749</option>
+                <option>750+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cardsCount">How many credit cards?</label>
+              <input type="number" id="cardsCount" placeholder="e.g., 3" min="0" />
+            </div>
+
+            <div class="form-group">
+              <label for="negatives">Any collections / charge-offs?</label>
+              <select id="negatives">
+                <option value="">Choose one</option>
+                <option>Yes, on my reports</option>
+                <option>No, just high balances</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+
+            <button type="button" class="btn btn-primary hero-snapshot-btn" id="snapshotBtn">
+              Tell Me What to Fix First
+            </button>
+          </form>
+
+          <div class="snapshot-output" id="snapshotOutput"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======================= FEATURES ======================= -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">What This App Helps You Fix</h2>
+        <p class="section-subtitle">
+          No fluff, no fake promises. Just real moves that move the needle on your score.
+        </p>
 
         <div class="card-grid">
-          <article class="card">
-            <h3>3-Bureau Credit Audit</h3>
-            <p>
-              We review Experian, Equifax, and TransUnion line by line, identify
-              inaccurate or obsolete items, and map out a written game plan.
-            </p>
-            <ul>
-              <li>3-bureau snapshot</li>
-              <li>Written action plan</li>
-              <li>Live review call</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Dispute &amp; Reinvestigation Support</h3>
-            <p>
-              Targeted, compliant disputes to bureaus and furnishers for items that are inaccurate,
-              incomplete, or unverifiable.
-            </p>
-            <ul>
-              <li>Letters to bureaus &amp; furnishers</li>
-              <li>Reinvestigation follow-up</li>
-              <li>Documentation tracking</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Score Coaching</h3>
-            <p>
-              Utilization, mix, new accounts, and payment history strategy so you know what actions
-              to take after the disputes.
-            </p>
-            <ul>
-              <li>Game plan around your goals</li>
-              <li>Ongoing score check-ins</li>
-              <li>Text/email support Mon–Fri</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Identity Theft Package</h3>
-            <p>
-              Help with affidavits, police reports, freezes, alerts, and follow-up letters if you’ve
-              been a victim of fraud.
-            </p>
-            <ul>
-              <li>Fraud affidavit guidance</li>
-              <li>Police report + FTC help</li>
-              <li>Freeze &amp; alert setup</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="section section-alt">
-      <div class="container">
-        <header class="section-header">
-          <h2>Simple, transparent pricing</h2>
-          <p>No fake guarantees. No games. Clear pricing you can understand.</p>
-        </header>
-
-        <div class="pricing-grid">
-          <div class="price-card">
-            <div class="price-amount">$150</div>
-            <h3>Audit &amp; Setup <span class="label">One-time</span></h3>
-            <ul>
-              <li>3-bureau credit audit</li>
-              <li>Written action plan</li>
-              <li>Onboarding + education call</li>
-            </ul>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Late Payments</h3>
+              <span class="card-pill">Payment History</span>
+            </div>
+            <div class="card-body">
+              Learn how goodwill letters, disputes, and fresh on-time payments can rebuild trust with the scoring models.
+            </div>
           </div>
 
-          <div class="price-card highlight">
-            <div class="price-amount">$99</div>
-            <h3>Monthly Service</h3>
-            <ul>
-              <li>Ongoing disputes &amp; reinvestigations</li>
-              <li>Score coaching check-ins</li>
-              <li>Email/text support Mon–Fri</li>
-            </ul>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Collections & Charge-Offs</h3>
+              <span class="card-pill">Negative Marks</span>
+            </div>
+            <div class="card-body">
+              Understand what to dispute, what to settle, and how to negotiate smarter instead of just throwing money at it.
+            </div>
           </div>
 
-          <div class="price-card">
-            <div class="price-amount">$25</div>
-            <h3>Per Valid Deletion</h3>
-            <ul>
-              <li>Pay only on documented, verifiable deletions</li>
-              <li>Proof of removal provided for your records</li>
-            </ul>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Utilization & Balances</h3>
+              <span class="card-pill">30% of Score</span>
+            </div>
+            <div class="card-body">
+              Build a plan to bring cards down under 30% — and under 10% if you want that “elite” score lane.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Smart New Credit</h3>
+              <span class="card-pill">Game Plan</span>
+            </div>
+            <div class="card-body">
+              Stop guessing about what to apply for. Learn when to chill, when to build, and how not to tank your score.
+            </div>
           </div>
         </div>
-
-        <p class="disclaimer small center">
-          We follow the Credit Repair Organizations Act (CROA). No specific score or outcome is
-          guaranteed. All services depend on the actions of the credit bureaus and furnishers.
-        </p>
       </div>
     </section>
 
-    <!-- WHY US -->
-    <section id="why-us" class="section">
+    <!-- ======================= AI SCORE COACH ======================= -->
+    <section class="section" id="coach">
       <div class="container">
-        <header class="section-header">
-          <h2>Why clients choose Stayton Credit Solutions</h2>
-        </header>
+        <div class="ask-ai">
+          <div class="ask-ai-header">
+            <div>
+              <h2 class="ask-ai-title">AI Score Coach</h2>
+              <p class="ask-ai-status">Online · Straight talk about your credit</p>
+            </div>
+          </div>
 
-        <div class="card-grid four">
-          <article class="card">
-            <h3>Legal &amp; Ethical</h3>
-            <p>We operate within FCRA/CROA and keep you informed of every step taken.</p>
-          </article>
-          <article class="card">
-            <h3>Plain-English Updates</h3>
-            <p>No jargon. You’ll know what we did, when we did it, and what comes next.</p>
-          </article>
-          <article class="card">
-            <h3>Score-First Strategy</h3>
-            <p>We focus on the moves that can create the biggest long-term impact.</p>
-          </article>
-          <article class="card">
-            <h3>Local &amp; Reachable</h3>
-            <p>Based in North Richland Hills, serving Texans statewide by phone, text, and email.</p>
-          </article>
+          <!-- Messages -->
+          <div class="ask-ai-messages" id="aiMessages">
+            <div class="ai-message bot">
+              I’m your AI Score Coach. 💬  
+              Tell me your situation in your own words — score range, collections, cards — and I’ll tell you what I’d fix first.
+            </div>
+          </div>
+
+          <!-- Input row -->
+          <div class="ask-ai-input-row">
+            <input
+              type="text"
+              id="aiQuestion"
+              placeholder="Example: 'I’m at 620 with one collection and high card balances, what should I do first?'"
+            />
+            <button class="btn btn-primary" id="aiSendBtn">Ask Coach</button>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section section-alt">
-      <div class="container">
-        <header class="section-header">
-          <h2>Frequently asked questions</h2>
-        </header>
-
-        <div class="faq-list">
-          <details>
-            <summary>How long does this process take?</summary>
-            <p>
-              Many clients see movement in 30–90 days, but timing depends on the bureaus, furnishers,
-              and your unique situation.
-            </p>
-          </details>
-
-          <details>
-            <summary>Do I need all three credit reports?</summary>
-            <p>
-              Yes. We need Experian, Equifax, and TransUnion to see the full picture. Please pull all
-              three reports before your consultation so we can dive straight into strategy instead of
-              waiting on logins.
-            </p>
-          </details>
-
-          <details>
-            <summary>Can you guarantee deletions or score increases?</summary>
-            <p>
-              No one can legally guarantee results. We challenge inaccurate, incomplete, or
-              unverifiable items and coach you on healthy credit behavior.
-            </p>
-          </details>
-
-          <details>
-            <summary>Is this legal?</summary>
-            <p>
-              Yes. Credit repair is legal when done under the rules of the Fair Credit Reporting Act
-              (FCRA) and the Credit Repair Organizations Act (CROA). We do not create new identities
-              or CPNs.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ASK AI SECTION (STATIC EXAMPLE) -->
-    <section class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2>Ask AI: Credit Questions</h2>
-          <p>
-            Have a question about collections, late payments, or utilization? Use this box to get
-            general educational guidance before you schedule your one-on-one call.
-          </p>
-          <p class="small muted">
-            Example: “Should I settle or pay in full?” • “What’s a goodwill letter?” •
-            “How many cards is too many?”
-          </p>
-        </header>
-
-        <div class="ask-ai-box">
-          <textarea class="input" placeholder="Type your question here..."></textarea>
-          <button class="btn">Get Sample Guidance</button>
-        </div>
-
-        <p class="disclaimer small">
-          Ask AI: Credit Questions is for general information, not individualized legal, tax, or
-          financial advice and does not create a client relationship. For a custom game plan,
-          book a consultation with Stayton Credit Solutions.
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <div class="container contact-grid">
-        <div>
-          <header class="section-header">
-            <h2>Ready to talk to a real person?</h2>
-            <p>
-              Fill this out and we’ll reach out during business hours. You can also call or text
-              <a href="tel:14694356294">(469) 435-6294</a>.
-            </p>
-          </header>
-          <p class="small muted">
-            Time saver: please have your three credit reports ready before we call so we can go
-            straight into strategy.
-          </p>
-
-          <form class="contact-form">
-            <label>
-              Full name
-              <input type="text" name="name" placeholder="Your full name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com" required />
-            </label>
-            <label>
-              Phone
-              <input type="tel" name="phone" placeholder="(xxx) xxx-xxxx" required />
-            </label>
-            <label>
-              Service
-              <select name="service">
-                <option value="">Choose one</option>
-                <option>Credit Audit</option>
-                <option>Disputes</option>
-                <option>Identity Theft Help</option>
-                <option>Score Coaching</option>
-              </select>
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="4" placeholder="Tell us what’s going on..."></textarea>
-            </label>
-            <button type="submit" class="btn primary full">Send Message</button>
-          </form>
-        </div>
-
-        <aside class="contact-info">
-          <h3>Stayton Credit Solutions</h3>
-          <p>North Richland Hills, TX 76180</p>
-          <p><strong>Phone:</strong> <a href="tel:14694356294">(469) 435-6294</a></p>
-          <p><strong>Email:</strong> <a href="mailto:staytoncory6@gmail.com">staytoncory6@gmail.com</a></p>
-          <p>
-            <a href="Client-Contract.pdf" target="_blank" class="link">
-              View our client agreement
-            </a>
-          </p>
-        </aside>
       </div>
     </section>
   </main>
 
-  <!-- ================ FOOTER ================ -->
-  <footer class="site-footer">
-    <div class="container footer-flex">
-      <p>
-        © Stayton Credit Solutions •
-        <a href="mailto:staytoncory6@gmail.com">staytoncory6@gmail.com</a> •
-        <a href="tel:14694356294">(469) 435-6294</a>
-      </p>
-      <p class="small muted">
-        We are not attorneys, CPAs, or financial advisors. Information provided is for educational
-        purposes only and is not legal, tax, or investment advice.
-      </p>
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Stayton Credit Solutions · This is education, not legal or tax advice.
     </div>
   </footer>
 </body>
