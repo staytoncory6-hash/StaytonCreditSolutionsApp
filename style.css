@@ -9,7 +9,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -20,7 +21,6 @@ body {
   line-height: 1.6;
 }
 
-/* Simple container */
 .container {
   width: 100%;
   max-width: 1100px;
@@ -33,8 +33,8 @@ body {
 ========================= */
 header {
   background: linear-gradient(90deg, #02152F, #0B3A70);
-  border-bottom: 1px solid rgba(192,196,204,0.2);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border-bottom: 1px solid rgba(192, 196, 204, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .header-inner {
@@ -96,7 +96,7 @@ nav a:hover,
 nav a:focus {
   color: #FFFFFF;
   border-color: #C0C4CC;
-  background: rgba(11,58,112,0.6);
+  background: rgba(11, 58, 112, 0.6);
 }
 
 /* Mobile nav */
@@ -132,7 +132,7 @@ nav a:focus {
   line-height: 1.2;
 }
 
-.hero-title span.highlight {
+.hero-title .highlight {
   color: #C0C4CC;
 }
 
@@ -153,12 +153,11 @@ nav a:focus {
   font-size: 0.8rem;
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  border: 1px solid rgba(192,196,204,0.4);
+  border: 1px solid rgba(192, 196, 204, 0.4);
   color: #C0C4CC;
-  background: rgba(2,21,47,0.6);
+  background: rgba(2, 21, 47, 0.6);
 }
 
-/* HERO CTA BUTTONS */
 .hero-actions {
   margin-top: 1.6rem;
   display: flex;
@@ -166,6 +165,7 @@ nav a:focus {
   gap: 0.8rem;
 }
 
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -183,22 +183,22 @@ nav a:focus {
 .btn-primary {
   background: linear-gradient(135deg, #0B3A70, #00A0FF);
   color: #FFFFFF;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.55);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55);
 }
 
 .btn-outline {
   background: transparent;
   color: #C0C4CC;
-  border-color: rgba(192,196,204,0.5);
+  border-color: rgba(192, 196, 204, 0.5);
 }
 
 .btn-outline:hover {
-  background: rgba(11,58,112,0.65);
+  background: rgba(11, 58, 112, 0.65);
   color: #FFFFFF;
 }
 
@@ -207,8 +207,8 @@ nav a:focus {
   background: radial-gradient(circle at top left, #0B3A70, #02152F 60%, #010712 100%);
   border-radius: 1.25rem;
   padding: 1.4rem 1.6rem;
-  border: 1px solid rgba(192,196,204,0.25);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.65);
+  border: 1px solid rgba(192, 196, 204, 0.25);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
 }
 
 .hero-card-title {
@@ -223,8 +223,24 @@ nav a:focus {
   margin-bottom: 1rem;
 }
 
+/* HERO FORM */
+.hero-form .form-group {
+  margin-bottom: 0.9rem;
+}
+
+.hero-snapshot-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.snapshot-output {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: #E4E7EE;
+}
+
 /* =========================
-   FORM / INPUTS (if you have an app-style form)
+   FORM / INPUTS
 ========================= */
 .form-group {
   margin-bottom: 1rem;
@@ -243,8 +259,8 @@ textarea {
   width: 100%;
   padding: 0.55rem 0.7rem;
   border-radius: 0.55rem;
-  border: 1px solid rgba(192,196,204,0.55);
-  background: rgba(1,7,18,0.9);
+  border: 1px solid rgba(192, 196, 204, 0.55);
+  background: rgba(1, 7, 18, 0.9);
   color: #FFFFFF;
   font-size: 0.9rem;
   outline: none;
@@ -260,12 +276,12 @@ input:focus,
 select:focus,
 textarea:focus {
   border-color: #00A0FF;
-  box-shadow: 0 0 0 1px rgba(0,160,255,0.4);
-  background: rgba(1,7,18,0.95);
+  box-shadow: 0 0 0 1px rgba(0, 160, 255, 0.4);
+  background: rgba(1, 7, 18, 0.95);
 }
 
 /* =========================
-   DASHBOARD / CARDS
+   SECTIONS / CARDS
 ========================= */
 .section {
   margin-top: 2.5rem;
@@ -290,11 +306,11 @@ textarea:focus {
 }
 
 .card {
-  background: rgba(1,7,18,0.9);
+  background: rgba(1, 7, 18, 0.9);
   border-radius: 1rem;
   padding: 1rem 1.1rem;
-  border: 1px solid rgba(192,196,204,0.22);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.6);
+  border: 1px solid rgba(192, 196, 204, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
 }
 
 .card-header {
@@ -313,7 +329,7 @@ textarea:focus {
   font-size: 0.7rem;
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
-  border: 1px solid rgba(192,196,204,0.4);
+  border: 1px solid rgba(192, 196, 204, 0.4);
   color: #C0C4CC;
 }
 
@@ -324,15 +340,15 @@ textarea:focus {
 }
 
 /* =========================
-   ASK AI BOX (if you have an AI chat area)
+   ASK AI / CHAT BOX
 ========================= */
 .ask-ai {
   margin-top: 2rem;
   padding: 1.2rem 1.3rem;
   border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(11,58,112,0.9), rgba(2,21,47,0.95));
-  border: 1px solid rgba(192,196,204,0.35);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.7);
+  background: linear-gradient(135deg, rgba(11, 58, 112, 0.9), rgba(2, 21, 47, 0.95));
+  border: 1px solid rgba(192, 196, 204, 0.35);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7);
 }
 
 .ask-ai-header {
@@ -352,6 +368,40 @@ textarea:focus {
   color: #C0C4CC;
 }
 
+/* Chat area */
+.ask-ai-messages {
+  margin-top: 0.5rem;
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 0.3rem;
+}
+
+.ai-message {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.7rem;
+  margin-bottom: 0.45rem;
+  white-space: pre-wrap;
+}
+
+.ai-message.user {
+  background: rgba(1, 7, 18, 0.9);
+  border: 1px solid rgba(192, 196, 204, 0.35);
+  text-align: right;
+}
+
+.ai-message.bot {
+  background: rgba(192, 196, 204, 0.08);
+  border: 1px solid rgba(192, 196, 204, 0.18);
+}
+
+.ai-message.typing {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Input row */
 .ask-ai-input-row {
   margin-top: 0.6rem;
   display: flex;
@@ -372,7 +422,7 @@ textarea:focus {
 footer {
   margin-top: 3rem;
   padding: 1.5rem 0 2rem;
-  border-top: 1px solid rgba(192,196,204,0.18);
+  border-top: 1px solid rgba(192, 196, 204, 0.18);
   color: #8B93A1;
   font-size: 0.8rem;
   text-align: center;
